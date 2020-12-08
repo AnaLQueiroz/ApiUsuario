@@ -1,0 +1,23 @@
+USE [Nome_do_banco]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Usuarios](
+	[UsuarioID] [int] NOT NULL,
+	[Nome] [varchar](max) NOT NULL,
+	[Senha] [varchar](max) NOT NULL,
+	[Email] [varchar](max) NOT NULL,
+	[Celular] [varchar](50) NULL,
+ CONSTRAINT [PK_Usuarios] PRIMARY KEY CLUSTERED 
+(
+	[UsuarioID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+
